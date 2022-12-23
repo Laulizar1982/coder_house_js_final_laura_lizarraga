@@ -12,14 +12,36 @@
     />
     <link rel="stylesheet" href="./styles.css">
 </head>
+ 
 <body>
-
+    
     <div class="wrapper">
         <aside>
             <header>
                 <img src="./img/logomobiliario.png" alt="logo">
             </header>
             <nav>
+                <div class="container">
+                    <h1>El Clima al Instante</h1>
+                    <select name="ciudad" id="ciudad">
+                        <option value="buenos aires">
+                            Buenos Aires (Argentina)
+                        </option>
+                        <option value="colombia">
+                            Bogotá (colombia)
+                        </option>
+                        <option value="ciudad de mexico">
+                            Ciudad de México (México)
+                        </option>
+                        <option value="lima">
+                            Lima (Perú)
+                        </option>
+                        <option value="madrid">
+                            Madrid (España)
+                        </option>
+                    </select>
+                    <h2 id="temp"> - </h2>
+                </div>
                 <ul class="menu">
                     <li>
                         <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
@@ -56,5 +78,6 @@
     </div>
     
     <script src="./script/index.js"></script>
+    
 </body>
 </html>

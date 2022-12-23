@@ -10,6 +10,7 @@
 h1, h2, h3, h4, h5, h6, a, input, textarea, ul {
     margin: 0;
     padding: 0;
+    color: red ;
 }
 
 ul {
@@ -23,14 +24,18 @@ a {
 p{
     text-align: center;
 }
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color:transparent ;
 }
-
+.container{
+    background-color: black;
+    text-align: center;
+   margin-bottom: 15px;
+}
 aside {
-    padding: 2rem;
     padding-right: 0;
     color: #ececec;
     position: sticky;
