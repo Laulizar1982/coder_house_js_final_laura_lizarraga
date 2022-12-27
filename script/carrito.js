@@ -133,29 +133,9 @@ function actualizarTotal() {
 
 const btn = document.querySelector('#comprar-carrito')
 
-botonComprar.addEventListener("click", buyCart);
+botonComprar.addEventListener("click", comprarCarrito);
 
 function comprarCarrito() {
-
-    productosEnCarrito.length = 0;
-
-    localStorage.setItem(
-        "productos-en-carrito",
-        JSON.stringify(productosEnCarrito)
-    );
-    swal({
-        title: "Compra realizada!",
-        text: "¡Bien Hecho! Usted acaba de realizar su pedido.",
-        icon: "success",
-        button: "CONTINUAR LA COMPRA",});
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
-
-}
-
-function buyCart() {
 
     swal({
         title: "Desea confirmar la compra ?",
