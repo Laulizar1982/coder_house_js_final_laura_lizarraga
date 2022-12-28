@@ -285,8 +285,6 @@ function agregarAlCarrito(e) {
     productosEnCarrito.push(productoAgregado);
   }
 
-  
-
   actualizarNumero();
 
   localStorage.setItem(
@@ -303,4 +301,3 @@ function actualizarNumero() {
   );
   numero.innerText = nuevoNumero;
 }
-
